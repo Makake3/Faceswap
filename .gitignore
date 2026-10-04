@@ -1,0 +1,8 @@
+*.mp4
+*.mov
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.safetensors
+*.ckpt
