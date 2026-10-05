@@ -21,6 +21,8 @@ Pour les récupérer sur le PC : sur GitHub, bouton **Code → Download ZIP**, p
 | `verifier-modeles.bat` | Range les modèles restés dans Téléchargements, puis vérifie que les 7 fichiers sont présents, complets (taille) et dans le bon sous-dossier. Signale les téléchargements inachevés (`.crdownload`). |
 | `lancer-comfyui.bat` | Lance ComfyUI sur le port 8189 et ouvre http://127.0.0.1:8189. |
 | `qui-occupe-le-port.ps1` | Indique quel programme Python occupe le port 8188 (et environ 7 Go de VRAM), d'où il est lancé au démarrage, et l'état de la VRAM. |
+| `preparer-dataset.bat` | Glisser le dossier des images de l'avatar dessus : prépare le dataset de la LoRA (images redimensionnées et légendes à compléter). |
+| `extraire-image.bat` | Glisser une vidéo dessus : enregistre sa première image en PNG (référence pour le workflow). |
 
 ## Modèles requis (26,65 Go)
 
@@ -42,7 +44,7 @@ Pour les récupérer sur le PC : sur GitHub, bouton **Code → Download ZIP**, p
 4. [ ] Préparer le test dans `ComfyUI\input` : un clip de 3 à 5 s (une seule personne, corps entier visible, caméra stable) et l'avatar (en pied, de face, fond simple).
 5. [ ] Charger la vidéo et l'image, désigner la personne à remplacer, régler une résolution d'environ 832 × 480, puis cliquer sur **Exécuter**.
 6. [ ] Si le résultat est bon : passer en 720p, puis faire le montage (coupe sur le claquement de doigts, son d'origine) dans CapCut, Clipchamp ou DaVinci Resolve.
-7. [ ] Options : FaceFusion pour le visage, ou entraîner une LoRA de l'avatar (15 à 30 images) si son apparence varie d'une vidéo à l'autre.
+7. [ ] **Garder le même avatar et ma tenue :** entraîner la LoRA de l'avatar et créer une image de référence par vidéo. Voir [docs/LORA.md](docs/LORA.md).
 
 ## Matériel
 
